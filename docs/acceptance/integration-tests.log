@@ -1,0 +1,21 @@
+SKIP AcceptanceTests.AT04_moving_average_and_AT24_stocktake_reconcile: perlu STOKIN_TEST_CONNECTION; benchmark/backup juga memerlukan opt-in tersendiri.
+SKIP AcceptanceTests.AT01_dashboard_counts_and_AT07_duplicate_SKUs: perlu STOKIN_TEST_CONNECTION; benchmark/backup juga memerlukan opt-in tersendiri.
+SKIP AcceptanceTests.AT15_competing_issues_never_make_negative_stock: perlu STOKIN_TEST_CONNECTION; benchmark/backup juga memerlukan opt-in tersendiri.
+SKIP AcceptanceTests.AT16_request_replay_and_AT18_lookup_do_not_double_post: perlu STOKIN_TEST_CONNECTION; benchmark/backup juga memerlukan opt-in tersendiri.
+SKIP AcceptanceTests.AT17_second_line_failure_rolls_back_every_side_effect: perlu STOKIN_TEST_CONNECTION; benchmark/backup juga memerlukan opt-in tersendiri.
+SKIP AcceptanceTests.AT20_value_correction_preserves_historical_issue_cost_and_AT22_conflicts: perlu STOKIN_TEST_CONNECTION; benchmark/backup juga memerlukan opt-in tersendiri.
+SKIP AcceptanceTests.AT25_stale_stocktake_is_atomic_and_AT26_zero_difference_has_no_movement: perlu STOKIN_TEST_CONNECTION; benchmark/backup juga memerlukan opt-in tersendiri.
+SKIP AcceptanceTests.AT28_cost_permissions_and_revoked_export_leave_output_empty: perlu STOKIN_TEST_CONNECTION; benchmark/backup juga memerlukan opt-in tersendiri.
+SKIP AcceptanceTests.AT29_lockout_expired_session_and_last_admin: perlu STOKIN_TEST_CONNECTION; benchmark/backup juga memerlukan opt-in tersendiri.
+SKIP AcceptanceTests.AT27_report_snapshot_and_exclusive_end_remain_consistent: perlu STOKIN_TEST_CONNECTION; benchmark/backup juga memerlukan opt-in tersendiri.
+SKIP BackupTests.AT30_restore_into_separate_database_reconciles_snapshot: perlu STOKIN_TEST_CONNECTION; benchmark/backup juga memerlukan opt-in tersendiri.
+SKIP BaselineTests.AT33_measures_100_reads_and_100_posts_on_baseline_dataset: perlu STOKIN_TEST_CONNECTION; benchmark/backup juga memerlukan opt-in tersendiri.
+PASS EditorRegressionTests.Shared_busy_guard_blocks_mutation_and_overlapping_save_post
+PASS EditorRegressionTests.Delayed_save_does_not_mark_newer_edits_as_saved
+SKIP SchemaTests.Migration_creates_integrity_constraints: perlu STOKIN_TEST_CONNECTION; benchmark/backup juga memerlukan opt-in tersendiri.
+PASS SecurityTests.Passwords_use_unique_salts_and_reject_incorrect_password
+UI renders: C:\ITS\Mata Kuliah\Semester 5\PBKK\ETS\STOKIN\output\ui
+PASS UiSmokeTests.WPF_views_render_at_100_and_125_percent_logical_sizes
+PASS UiSmokeTests.Indonesian_decimal_input_rejects_grouping_and_integer_fraction
+PASS UiSmokeTests.Async_command_blocks_double_execution
+RESULT passed=6 failed=0 skipped=13

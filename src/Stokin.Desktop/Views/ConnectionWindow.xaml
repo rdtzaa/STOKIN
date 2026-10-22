@@ -1,0 +1,16 @@
+<Window x:Class="Stokin.Desktop.Views.ConnectionWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="STOKIN • Koneksi toko" Width="960" Height="680" MinWidth="780" MinHeight="580" WindowStartupLocation="CenterScreen">
+ <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="340"/><ColumnDefinition/></Grid.ColumnDefinitions>
+ <Border Background="#142F3B" Padding="36"><StackPanel><TextBlock Text="▦  STOKIN" FontSize="29" FontWeight="Bold" Foreground="White"/><TextBlock Text="Persediaan rapi.&#10;Keputusan pasti." FontSize="32" FontWeight="SemiBold" Foreground="White" Margin="0,76,0,20"/><TextBlock Text="Pantau ketersediaan barang, catat setiap pergerakan, dan kenali kebutuhan toko Anda." FontSize="15" Foreground="#B6CCD3" LineHeight="25"/>
+ <Border BorderBrush="#3B5963" BorderThickness="1" CornerRadius="12" Padding="22" Margin="0,42,0,0"><StackPanel><TextBlock Text="SATU SUMBER DATA TOKO" Foreground="#70D1BE" FontSize="10" FontWeight="Bold"/><TextBlock Text="Barang → Dokumen → Kartu stok" Foreground="White" FontSize="15" Margin="0,12,0,8"/><TextBlock Text="Setiap perubahan dapat ditelusuri." Foreground="#AEC6CF"/></StackPanel></Border>
+ <TextBlock Text="WINDOWS DESKTOP  /  INVENTARIS TOKO" Foreground="#829FA9" FontSize="10" Margin="0,45,0,0"/></StackPanel></Border>
+ <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto"><StackPanel Margin="38,30"><TextBlock Text="Selamat datang di STOKIN" FontSize="26" FontWeight="Bold"/><TextBlock Text="Hubungkan aplikasi dengan database toko Anda." Foreground="{StaticResource Muted}" Margin="0,9,0,23"/>
+ <TextBlock Text="Server SQL Server" Style="{StaticResource Label}"/><TextBox x:Name="Server" Text=".\SQLEXPRESS"/>
+ <TextBlock Text="Nama database" Style="{StaticResource Label}" Margin="0,13,0,6"/><TextBox x:Name="Database" Text="Stokin"/>
+ <CheckBox x:Name="Integrated" Content="Gunakan autentikasi Windows" IsChecked="True" Margin="0,16,0,10"/>
+ <Grid><Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition Width="12"/><ColumnDefinition/></Grid.ColumnDefinitions><StackPanel><TextBlock Text="Akun SQL (jika diperlukan)" Style="{StaticResource Label}"/><TextBox x:Name="Username"/></StackPanel><StackPanel Grid.Column="2"><TextBlock Text="Kata sandi SQL" Style="{StaticResource Label}"/><PasswordBox x:Name="Password"/></StackPanel></Grid>
+ <CheckBox x:Name="Trust" Content="Percayai sertifikat server lokal" IsChecked="True" Margin="0,16,0,10"/><CheckBox x:Name="Create" Content="Buat database baru jika belum tersedia" Margin="0,0,0,8"/>
+ <TextBlock Text="Skema database STOKIN akan diperiksa dan migrasi yang diperlukan diterapkan. Lokasi toko tidak memerlukan internet setelah setup." Foreground="{StaticResource Muted}" FontSize="11"/>
+ <TextBlock x:Name="Error" Foreground="#B13D3D" Margin="0,12,0,10"/><ProgressBar x:Name="Progress" Height="3" IsIndeterminate="True" Visibility="Collapsed" Margin="0,0,0,10"/>
+ <Button x:Name="ConnectButton" Content="Hubungkan toko  →" Style="{StaticResource Primary}" Click="Connect" IsDefault="True"/>
+ </StackPanel></ScrollViewer></Grid>
+</Window>

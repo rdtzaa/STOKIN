@@ -1,0 +1,1 @@
+return await Stokin.Testing.Runner.RunAsync(typeof(Program).Assembly, args);

@@ -1,0 +1,12 @@
+  Stokin.Domain -> C:\ITS\Mata Kuliah\Semester 5\PBKK\ETS\STOKIN\src\Stokin.Domain\bin\Release\net8.0\Stokin.Domain.dll
+  Stokin.Application -> C:\ITS\Mata Kuliah\Semester 5\PBKK\ETS\STOKIN\src\Stokin.Application\bin\Release\net8.0\Stokin.Application.dll
+  Stokin.Domain.Tests -> C:\ITS\Mata Kuliah\Semester 5\PBKK\ETS\STOKIN\tests\Stokin.Domain.Tests\bin\Release\net8.0\Stokin.Domain.Tests.dll
+  Stokin.Infrastructure -> C:\ITS\Mata Kuliah\Semester 5\PBKK\ETS\STOKIN\src\Stokin.Infrastructure\bin\Release\net8.0-windows\Stokin.Infrastructure.dll
+  Stokin.Desktop -> C:\ITS\Mata Kuliah\Semester 5\PBKK\ETS\STOKIN\src\Stokin.Desktop\bin\Release\net8.0-windows\Stokin.Desktop.dll
+  Stokin.IntegrationTests -> C:\ITS\Mata Kuliah\Semester 5\PBKK\ETS\STOKIN\tests\Stokin.IntegrationTests\bin\Release\net8.0-windows\Stokin.IntegrationTests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.13
